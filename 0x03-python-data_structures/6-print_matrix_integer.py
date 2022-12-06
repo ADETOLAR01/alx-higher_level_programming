@@ -1,13 +1,11 @@
 #!/usr/bin/python3
-# 6-print_matrix_integer.py
 
+def divisible_by_2(my_list=[]):
+    new_list = []
 
-def print_matrix_integer(matrix=[[]]):
-    """Print a matrix of integers."""
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-                print("{:d}".format(matrix[i][j]), end="")
-                if j != (len(matrix[i]) - 1):
-                    print(" ", end="")
-
-        print("")
+    for i in my_list:
+        if i % 2 == 0:
+            new_list.append(True)
+        else:
+            new_list.append(False)
+    return (new_list)
