@@ -1,14 +1,12 @@
 # 3-say_my_name.txt
-# Brennan D Baraban <375@holbertonschool.com>
 
-===========================
+
 How to Use 3-say_my_name.py
-===========================
 
 This modules defines a function ``say_my_name(first_name, last_name="")``.
 
 Usage
-=====
+
 
 ``say_my_name(...)`` prints "My name is <first_name> <last_name>".
 
@@ -32,7 +30,6 @@ an empty string is printed instead.
     My name is Brennan 
 
 Invalid Names
-=============
 
 The parameters ``first_name`` and ``last_name``` must be strings. Otherwise,
 a TypeError is raised.
