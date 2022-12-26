@@ -1,15 +1,13 @@
 # 101-lazy_matrix_mul.txt
-# Brennan D Baraban <375@holbertonschool.com>
 
-=================================
+--------------------------------
 How to Use 101-lazy_matrix_mul.py
-=================================
+
 
 This module defines a matrix multiplication function
 ``lazy_matrix_mul(m_a, m_b)``.
 
 Usage
-=====
 
 ``lazy_matrix_mul(...)`` returns a new matrix representing the multiplication
 of ``m_a`` by ``m_b``.
@@ -69,7 +67,6 @@ A minimum of two arguments must be provided.
     'm_a' and 'm_b'
 
 ValueErrors
-===========
 
 If two matrices cannot be multiplied (ie. the row count of ``m_a`` is not
 equal to the column count in ``m_b``), a ValueError is raised.
@@ -106,7 +103,6 @@ is raised.
     ValueError: shapes (2,2) and (1,0) not aligned: 2 (dim 1) != 1 (dim 0)
 
 Invalid Matrices
-================
 
 The parameters ``m_a`` and ``m_b`` must be lists. If either parameter is
 not a list, a ValueError is raised.
