@@ -1,6 +1,6 @@
 /*
  * File: 102-python.c
- * Auth: Brennan D Baraban
+ * Auth: Adebanji Adeniyi
  */
 
 #include "Python.h"
