@@ -1,6 +1,8 @@
-const $ = window.$;
-$.get('https://swapi-api.hbtn.io/api/films/?format=json', function (data) {
-  for (let i = 0; i <= data.results.length; i++) {
-    $('UL#list_movies').append('<li>' + data.results[i].title + '</li>');
-  }
+/*
+  fetches and lists all movies title by using this URL:
+  https://swapi-api.hbtn.io/api/films/?format=json
+*/
+const url = 'https://swapi-api.hbtn.io/api/films/?format=json';
+$.get(url, function (data, textStatus) {
+  data.results.map((movie) => $('UL#list_movies').append('<li>' + movie.title + '</li>'));
 });

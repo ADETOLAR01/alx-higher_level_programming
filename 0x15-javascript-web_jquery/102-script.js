@@ -1,9 +1,17 @@
-const $ = window.$;
-const url = 'https://fourtonfish.com/hellosalut/?lang=';
-$(this).ready(function () {
-  $('INPUT#btn_translate').on('click', function () {
-    $.getJSON(url + $('INPUT#language_code').val(), function (data) {
-      $('DIV#hello').text(data.hello);
+/*
+  fetches and prints how to say “Hello” depending of the language
+*/
+$(document).ready(() => {
+  $('INPUT#btn_translate').click(() => {
+    const helloTranslate = $('INPUT#language_code').val();
+    const url = 'https://fourtonfish.com/hellosalut/?lang=' + helloTranslate;
+    $.get(url, function (data, textStatus) {
+      console.log(url, data, textStatus);
+      if (data.code !== 'none') {
+        $('DIV#hello').text(data.hello);
+      } else {
+        $('DIV#hello').text('Invalid Language code');
+      }
     });
   });
 });
